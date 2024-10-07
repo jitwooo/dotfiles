@@ -1,273 +1,3 @@
-code .
-nvidia-smi
-https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-5
-nvcc -V
-sudo apt install nvidia-cuda-toolkit
-nvcc -v
-nvcc -V
-nvidia-smi
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
-bash Anaconda3-5.3.1-Linux-x86_64.sh
-conda init
-sudo vim ~/.bashrc
-source ~/.bashrc
-conda init
-conda 
-conda create -n test python=3.8
-cp ~/.condarc ~/.condarc.bak
-vim ~/.condarc
-conda create -n test python=3.8
-conda
-ls
-ls -l
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2 
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/simpleitk
-conda config --set show_channel_urls yes
-conda info
-conda create -n test python=3.8
-sudo vim ./condarc
-sudo vim ~/.condarc
-# 查看一下.condarc
-$ cat ~/.condarc 
-show_channel_urls: true
-cat ~/.condarc
-conda info
-conda config --remove channels defaults
-conda config --show channels
-rm -r ~/.condarc
-vim ~/.condarc
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-$ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-conda init
-conda list
-conda create -n test python=3.8
-SSLError(MaxRetryError('HTTPSConnectionPool(host=\'repo.anaconda.com\', port=443): Max retries exceeded with url: /pkgs/free/linux-64/repodata.json.bz2 (Caused by SSLError(SSLError("bad handshake: Error([(\'SSL routines\', \'ssl3_get_server_certificate\', \'certificate verify failed\')])")))'))
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-conda config --set show_channel_urls yes
-sudo vim ~/.condarc
-rm -r ~/.condarc
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels http://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-conda config --set show_channel_urls yes
-sudo vim ~/.condarc
-conda create -n test python=3.8
-conda activate test
-conda base
-conda activate base
-cd /etc/apt
-ls
-sudo vim sources.list
-cp source.list source.list.bak
-cp sources.list sources.list.bak
-sudo cp sources.list sources.list.bak
-sudo vim sources.list
-sudo apt-get update
-sudo apt-get upgrade
-conda env remove --name test
-conda create -n test python=3.7
-conda activate test
-conda create -n -y d2l python=3.8 pip
-conda create -n -y d2l python=3.8 
-conda create -n d2l python=3.8 
-conda activate d2l
-pip install -y jupyter
-pip install jupyter
-conda install jupyter
-cd ~
-mkdir .pip
-cd .pip
-sudo vim pip.conf
-pip install jupyter
-pip install d2l 
-nvcc -V
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
-conda info
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-python
-sudo apt install tmux
-tmux 
-tmux attach -t 0
-tmux kill-session -t 0
-sudo mkdir /mnt/texlive
-sudo mount /mnt/d/texlive2024.iso /mnt/texlive
-cd /mnt
-ls
-ls -l
-sudo chmod 777 texlive/
-sudo mount /mnt/d/texlive2024.iso /mnt/texlive
-cd texlive/
-ls
-sudo /mnt/texlive/install-tl
-sudo umount /mnt/texlive
-make thesis
-sudo rm -r /mnt/texlive
-sudo vim ~/.bashrc
-source ~/.bashrc
-tex -V
-tex -v
-cd ~
-mkdir spare
-code /spare
-code ./spare/
-unzip hithesis-dev.zip 
-sudo apt install unzip
-cd hithesis-dev/
-ls
-latex hithesis.ins 
-cd examples/hitbook/chinese/
-code .
-make thesis
-cd ~/spare
-ls 
-ls -l
-ls -lt
-chmod 777 restart.sh 
-./restart.sh 
-cd ..
-ls
-unzip hithesis-dev.zip 
-cd hithesis-dev/
-latex hithesis.ins 
-cd examples/hitbook/chinese/
-make thesis
-code .
-cd ~/spare/
-./restart.sh 
-cd ~
-ls
-unzuo hithesis-dev.zip
-unzip hithesis-dev.zip 
-cd hithesis-dev/
-latex hithesis.ins 
-cd examples/hitbook/chinese/
-make thesis
-cd ~
-rm -r hithesis-dev
-unzip hithesis-dev.zip 
-cd hithesis-dev/
-latex hithesis.ins
-cd examples/hitbook/chinese/
-make thesis
-conda activate d2l
-where python
-whitch python
-cd anaconda3/envs/
-cd d2l
-ls -l
-cd bin
-ll
-python
-cd anaconda3/envs/d2l/bin
-ls -l
-ls > grep python*
-ls > grep python
-ls 
-ls -l
-cd ~/d2l
-ls
-cd d2l-zh
-ls
-cd pytorch
-ls -l
-cd d2l\d2l-z
-cd d2l\d2l-zh
-cd d2l
-ls
-cd d2l-zh/
-ls
-cd pytorch/
-ls
-cd chapter_multilayer-perceptrons/
-ls
-code .
-cd -
-cd d2l/d2l-zh/pytorch/chapter_multilayer-perceptrons/
-code .
-nvidia-smi
-nvcc -V
-nvidia-smi
-wget https://developer.download.nvidia.com/compute/cuda/repos/wsl-ubuntu/x86_64/cuda-keyring_1.1-1_all.deb
-sudo dpkg -i cuda-keyring_1.1-1_all.deb
-sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-5
-nvcc -V
-nvidia-smi
-nvcc 
-nvcc --help
-ls -a
-ll
-ls
-ls -a
-cd d2l/d2l-zh/pytorch/
-ll
-chapter_convolutional-neural-networks/
-cd chapter_convolutional-neural-networks/
-ls
-ll
-code 
-code .
-cd 
-ll
-cd missing_semester/
-ls
-cd l5
-ffmpeg --help
-sudo apt install ffmpeg
-man feh
-feh --help
-sudo apt install feh
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 - | convert - -colorspace gray - | gzip | ssh tsp 'gzip -d | tee copy.png' | feh -
-cd missing_semester/l4
-ls
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 - | convert - -colorspace gray - | gzip | ssh tsp 'gzip -d | tee copy.png' | feh -
-sudo  apt-get install imagemagick
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 - | convert - -colorspace gray - | gzip | ssh tsp 'gzip -d | tee copy.png' | feh -
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 -
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 - | feh -
-ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 - | convert - -colorspace gray - | feh -
-cd /dev/video
-cd /dev
-ll
-cd d2l/d2l-zh/pytorch/chapter_convolutional-neural-networks/
-code .
-cd ..
-ll
-cd chapter_convolutional-modern/
-ll
-code .
-nvcc -V
-nvidia-smi
-sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*"  "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
-sudo apt-get autoremove
-conda activate d2l
-python
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-nvcc -V
-sudo apt install nvidia-cuda-toolkit
-nvcc -V
-python 
 nvidia-smi
 sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*"  "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
 sudo apt-get autoremove
@@ -758,3 +488,153 @@ latexmk -pdf -pdflatex="pdflatex" -pvc main.tex
 cd ~/AMKS_writing/
 code .
 tmux source .tmux.conf
+ll
+ls -la
+vim .bash_aliases 
+git clone git@github.com:jitwooo/dotfiles.git
+cd dotfiles/
+ll
+ls -la
+vim .bash_aliases 
+cd ..
+vim .bash_aliases 
+l
+ll
+cd amks
+tar -zxvf data.tar.gz 
+cd amks/DiAMKS/
+conda env create -f environment.yml
+cd amks/DiAMKS/
+conda env create -f environment.yml
+conda config --remove-key channels
+vim ~/.condarc
+conda env create -f environment.yml
+conda config --remove-key channels
+vim ~/.condarc
+conda config --remove-key channels
+vim ~/.condarc
+conda config --remove-key channels
+conda env create -f environment.yml
+vim ~/.condarc
+conda config --remove-key channels
+conda config
+vim ~/.condarc
+conda env create -f environment.yml
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+conda env create -f environment.yml
+cd amks
+cd DiAMKS/
+conda env create -f environment.yml
+cd ~
+source .bashrc
+cd amks/DiAMKS/
+conda env create -f environment.yml
+cd ~
+ll
+conda config --show
+cd dotfiles/
+git push
+cd amks/DiAMKS/
+conda env create -f environment.yml
+conda config --remove-key channels
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
+conda config --set show_channel_urls yes
+conda env create -f environment.yml
+echo $http_proxy
+echo $https_proxy
+conda env create -f environment.yml
+ping google.com
+conda env create -f environment.yml
+conda config --show proxy
+conda update conda
+cd ~
+vim .condarc
+cd amks/DiAMKS/
+conda env create -f environment.yml
+vim ~/.bashhrc
+vim ~/.bashrc
+conda env create -f environment.yml
+source ~/.bashrc
+cd ~/dotfiles/
+git add .bashrc
+git commit
+cd ~/amks/DiAMKS/
+conda env create -f environment.yml
+echo $http_proxy
+cd ~
+vim .bashrc
+source .bashrc
+echo $http_proxy
+source ~/.bashrc
+echo $http_proxy
+python experiment/ex8.py 3
+cd amks/DiAMKS/
+conda env create -f environment.yml
+conda activate AMKS
+python
+conda install jupyter
+conda install ipykernel
+conda config --remove-key channels
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+conda install ipykernel
+jupyter notebook --generate-config
+sudo apt-get install tmux
+cd missing_semester/7-debug/
+vim logger.py 
+cd missing_semester/7-debug/
+vim logger.py 
+python logger.py 
+vim logger.py 
+python logger.py log
+python logger.py color
+vim logger.py 
+python logger.py color
+vim logger.py 
+vim ~/.vimrc
+cd ~
+ll
+cd dotfiles/
+ll
+vim symbolic_link.sh 
+cd ..
+mv .vimrc ~/dotfiles/.vimrc
+ll
+cd dotfiles/
+./symbolic_link.sh 
+cd ..
+ll
+cd missing_semester/7-debug/
+vim logger.py 
+python logger.py colr
+python logger.py color
+clear
+vim logger.py 
+printf "\e[38;2;255;0;0m  This is red   \e[0m"
+printf "\e[38;2;255;0;0m  This is red\n   \e[0m"
+clear
+printf "\e[38;2;255;0;0m  This is red\n   \e[0m"
+printf "\e[38;2;255;0;0m  This is red\n\e[0m
+"
+ls /var/log
+ll /var/log
+log show --last 10s
+cd /var/log
+ll
+cd journal/
+;;
+ll
+vim syslog
+sudo vim syslog
+cd ..
+ll
+sudo su
