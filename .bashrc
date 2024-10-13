@@ -135,3 +135,8 @@ export INFOPATH=/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH
 
 export PATH=/usr/local/cuda/bin:$PATH
 
+
+
+# NVM download mirror settings
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
+
